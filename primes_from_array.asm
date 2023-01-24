@@ -62,7 +62,8 @@ prime_print:
 	li $v0, 4
 	la $a0, space
 	syscall
-	j skip
+	addi $s0, $s0, 4
+	j cheaking
 
 skip:
     addi $s0, $s0, 4
